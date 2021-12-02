@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black80">#CC000000</color>
+    <color name="pureBlack">#000000</color>
+    <color name="mTextColor">#F2000000</color>
+    <color name="pureWhite">#ffffff</color>
+    <color name="unPureWhite">#F3F3F3</color>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="appBlue">#2196f3</color>
+    <color name="colorPrimaryDark">#442c2e</color>
+    <color name="colorAccent">#2196f3</color>
+    <color name="pureGrey">#BF000000</color>
+    <color name="viewHelperBg">#ff9100</color>
+
+    <color name="outLine">#fff</color>
+
+    <color name="color_pdf">#C62828</color>
+    <color name="color_doc">#0277BD</color>
+    <color name="color_docx">#0277BD</color>
+    <color name="color_xls">#00695C</color>
+    <color name="color_xlsx">#00695C</color>
+    <color name="color_csv">#2E7D32</color>
+
+    <color name="color_zip">#FF8F00</color>
+    <color name="color_rar">#AD1457</color>
+    <color name="color_obb">#283593</color>
+
+
+    <color name="ad_att_bg">#FFA500</color>
+    <color name="ad_bg">#FFFFF0</color>
+    <color name="ad_heading">#00008B</color>
+    <color name="ad_body">#696969</color>
+    <color name="ad_btn">#6200EE</color>
+    <color name="ad_btn_txt">#ffffff</color>
+
+    <color name="rippelColor">#0099CC</color>
+
+    <color name="c_doc">#1565C0</color>
+    <color name="c_apps">#2E7D32</color>
+    <color name="c_img">#FF8F00</color>
+    <color name="c_vid">#C62828</color>
+    <color name="c_aud">#00695C</color>
+    <color name="c_com">#880e4f</color>
+    <color name="placeholder_gray">#33000527</color>
+
+    <!-- colors for button style -->
+
+    <color name="gradient_start_color">#2196f7</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+
+    <!-- colors for tab and screent text -->
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+
+</resources>

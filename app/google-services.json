@@ -1,0 +1,209 @@
+{
+  "project_info": {
+    "project_number": "887436406134",
+    "firebase_url": "https://demos-fe69a-default-rtdb.firebaseio.com",
+    "project_id": "demos-fe69a",
+    "storage_bucket": "demos-fe69a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887436406134:android:e4742c96bc05f03ee85e57",
+        "android_client_info": {
+          "package_name": "com.aemerse.sharese"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887436406134-7gjvp8192u2be2cpb49qoqv3ieaia9ii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aemerse.sharese",
+            "certificate_hash": "ac4818ca0631dfd7ca65c25ae279532a6468561b"
+          }
+        },
+        {
+          "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-R3NhkKf-6xwNib46BfQbJAN7pB6V0lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887436406134:android:cdf61ea729ce638ce85e57",
+        "android_client_info": {
+          "package_name": "com.aemerse.svarogya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887436406134-n4vvt6bvc00iusnv8j8uu31cd8ncafcd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aemerse.svarogya",
+            "certificate_hash": "ac4818ca0631dfd7ca65c25ae279532a6468561b"
+          }
+        },
+        {
+          "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-R3NhkKf-6xwNib46BfQbJAN7pB6V0lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887436406134:android:d89fb68e480e6ac5e85e57",
+        "android_client_info": {
+          "package_name": "com.bhandari.music"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-R3NhkKf-6xwNib46BfQbJAN7pB6V0lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887436406134:android:73d59a5afa29c7d1e85e57",
+        "android_client_info": {
+          "package_name": "com.bhandari.music.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-R3NhkKf-6xwNib46BfQbJAN7pB6V0lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887436406134:android:b00393a6a7ebc244e85e57",
+        "android_client_info": {
+          "package_name": "com.music.player.bhandari.m"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-R3NhkKf-6xwNib46BfQbJAN7pB6V0lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887436406134:android:d85c9bedc916f0e4e85e57",
+        "android_client_info": {
+          "package_name": "net.plantix.android_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887436406134-vtl535fh53eam2qp440buleqor66bmru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.plantix.android_test",
+            "certificate_hash": "83d20265546e899ca4913e5904e3d665ed9e5e5e"
+          }
+        },
+        {
+          "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-R3NhkKf-6xwNib46BfQbJAN7pB6V0lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887436406134-9ko3sadm3jui81ammg2r0e5ol03b60fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

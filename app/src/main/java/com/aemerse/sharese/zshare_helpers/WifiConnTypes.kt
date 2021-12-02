@@ -1,0 +1,5 @@
+package com.aemerse.sharese.zshare_helpers
+
+const val TYPE_REQUEST_NEXT_FILE = "TYPE_REQUEST_NEXT_FILE"
+const val TYPE_RECEIVE_FILE_DATA = "TYPE_RECEIVE_FILE_DATA"
+const val TYPE_REQUEST_DISCONNECT = "TYPE_REQUEST_DISCONNECT"
