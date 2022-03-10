@@ -12,15 +12,13 @@ import kotlinx.android.synthetic.main.lay_pop_update_app.view.*
 import com.aemerse.sharese.BuildConfig
 import com.aemerse.sharese.R
 
-
 fun Activity.notifyUpdate(remoteConfig: FirebaseRemoteConfig) {
     val builder: AlertDialog.Builder = AlertDialog.Builder(this)
     val layoutInflater = layoutInflater
 
     val root: View = layoutInflater.inflate(R.layout.lay_pop_update_app, null)
 
-    root.changeData.text =
-        "${BuildConfig.VERSION_NAME} to ${remoteConfig["current_version_name"].asString()}, ${remoteConfig["current_version_size"].asString()}"
+    root.changeData.text = "${BuildConfig.VERSION_NAME} to ${remoteConfig["current_version_name"].asString()}, ${remoteConfig["current_version_size"].asString()}"
     root.newFeatures.text = remoteConfig["change_log"].asString()
     builder.setView(root)
     val dialog = builder.create()

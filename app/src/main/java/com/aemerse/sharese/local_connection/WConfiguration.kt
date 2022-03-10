@@ -1,7 +1,6 @@
 package com.aemerse.sharese.local_connection
 
 object WConfiguration {
-
     // Core
     const val MAX_THREAD_COUNT = 20
     const val MAX_THREAD_POOL_EXECUTOR_KEEP_ALIVE_TIME = 10L

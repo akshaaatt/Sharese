@@ -2,7 +2,6 @@ package com.aemerse.sharese.services;
 
 import java.net.InetAddress;
 
-
 public class WifiServiceUtils {
 
     public static int iNetAddressToInt(InetAddress inetAddress)

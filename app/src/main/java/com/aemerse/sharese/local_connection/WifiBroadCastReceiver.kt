@@ -8,7 +8,6 @@ import android.net.wifi.p2p.WifiP2pManager
 import android.net.wifi.p2p.WifiP2pManager.ConnectionInfoListener
 
 class WiFiP2PBroadcastReceiver(private val manager: WifiP2pManager, private val channel: WifiP2pManager.Channel, private val connectionInfoListener: ConnectionInfoListener) : BroadcastReceiver() {
-
     override fun onReceive(context: Context, intent: Intent) {
         val action = intent.action
         if (action != null) {

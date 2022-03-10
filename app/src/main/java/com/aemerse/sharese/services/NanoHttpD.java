@@ -1,10 +1,7 @@
 package com.aemerse.sharese.services;
 
-
 import android.util.Log;
-
 import org.jetbrains.annotations.NotNull;
-
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.Closeable;
@@ -43,10 +40,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.TimeZone;
-
 import com.aemerse.sharese.downloader.DownloadResult;
 import com.aemerse.sharese.interfaces.FileTransferStatusListener;
-
 
 /**
  * A simple, tiny, nicely embeddable HTTP server in Java
@@ -157,6 +152,7 @@ public abstract class NanoHttpD {
             try {
                 closeable.close();
             } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }
@@ -166,6 +162,7 @@ public abstract class NanoHttpD {
             try {
                 closeable.close();
             } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }
@@ -175,6 +172,7 @@ public abstract class NanoHttpD {
             try {
                 closeable.close();
             } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }
@@ -550,8 +548,8 @@ public abstract class NanoHttpD {
      * the directory specified.</p>
      */
     public static class DefaultTempFile implements TempFile {
-        private File file;
-        private OutputStream fstream;
+        private final File file;
+        private final OutputStream fstream;
 
         public DefaultTempFile(String tempdir) throws IOException {
             file = File.createTempFile("NanoHTTPD-", "", new File(tempdir));
@@ -671,20 +669,16 @@ public abstract class NanoHttpD {
                     pw.print("Content-Type: " + mime + "\r\n");
                 }
 
-                if (header == null || header.get("Date") == null) {
+                if (header.get("Date") == null) {
                     pw.print("Date: " + gmtFrmt.format(new Date()) + "\r\n");
                 }
 
-                if (header != null) {
-                    for (String key : header.keySet()) {
-                        String value = header.get(key);
-                        pw.print(key + ": " + value + "\r\n");
-                    }
+                for (String key : header.keySet()) {
+                    String value = header.get(key);
+                    pw.print(key + ": " + value + "\r\n");
                 }
 
-                if (header != null) {
-                    sendConnectionHeaderIfNotAlreadyPresent(pw, header);
-                }
+                sendConnectionHeaderIfNotAlreadyPresent(pw, header);
 
                 if (requestMethod != Method.HEAD && chunkedTransfer) {
                     sendAsChunked(outputStream, pw);

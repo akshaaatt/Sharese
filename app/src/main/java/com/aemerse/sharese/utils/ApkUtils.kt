@@ -10,7 +10,6 @@ import androidx.core.content.FileProvider
 import com.aemerse.sharese.BuildConfig
 import java.io.File
 
-
 object ApkInstaller {
     fun installApplication(context: Context, file: File) {
         val intent = Intent(Intent.ACTION_VIEW)

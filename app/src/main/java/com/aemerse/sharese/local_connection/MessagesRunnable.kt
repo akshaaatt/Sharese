@@ -64,7 +64,7 @@ class MessagesRunnable(private val socket: Socket, private val handler: Handler)
     }
 
     fun write(buffer: ByteArray) {
-        val thread = Thread(Runnable {
+        val thread = Thread {
             if (!socket.isClosed)
                 try {
                     Thread.sleep(200)
@@ -72,7 +72,7 @@ class MessagesRunnable(private val socket: Socket, private val handler: Handler)
                 } catch (e: IOException) {
                     Log.e(TAG, "Error in write: ", e)
                 }
-        })
+        }
 
         thread.start()
     }
