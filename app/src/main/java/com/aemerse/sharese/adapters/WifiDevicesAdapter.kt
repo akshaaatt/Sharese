@@ -30,16 +30,13 @@ class WifiDevicesHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 class WifiDevicesAdapter(
     private val c: ShareActivity,
     private var wifiDevices: ArrayList<WifiDeviceData>
-) :
-    RecyclerView.Adapter<WifiDevicesHolder>() {
+) : RecyclerView.Adapter<WifiDevicesHolder>() {
     companion object {
         private const val TAG = "WifiDevicesAdapter"
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WifiDevicesHolder {
-        return WifiDevicesHolder(
-            LayoutInflater.from(c).inflate(R.layout.item_wifi_device, parent, false)
-        )
+        return WifiDevicesHolder(LayoutInflater.from(c).inflate(R.layout.item_wifi_device, parent, false))
     }
 
     fun addDevice(deviceData: WifiDeviceData) {
@@ -65,14 +62,17 @@ class WifiDevicesAdapter(
                 delay(500)
                 retry++
                 c.connectToMacAddress(wifiDevice.macAddress) {
-                    if (retry++ == 2 && it != -1) {
-                        holder.itemView.connectingLottie.shrink()
-                        Toast.makeText(c, "Please retry!", Toast.LENGTH_SHORT).show()
-                    } else {
-                        c.connectToMacAddress(wifiDevice.macAddress) { it2 ->
-                            if (retry++ == 2 && it2 != -1) {
-                                holder.itemView.connectingLottie.shrink()
-                                Toast.makeText(c, "Please retry!", Toast.LENGTH_SHORT).show()
+                    when {
+                        retry++ == 2 && it != -1 -> {
+                            holder.itemView.connectingLottie.shrink()
+                            Toast.makeText(c, "Please retry!", Toast.LENGTH_SHORT).show()
+                        }
+                        else -> {
+                            c.connectToMacAddress(wifiDevice.macAddress) { it2 ->
+                                if (retry++ == 2 && it2 != -1) {
+                                    holder.itemView.connectingLottie.shrink()
+                                    Toast.makeText(c, "Please retry!", Toast.LENGTH_SHORT).show()
+                                }
                             }
                         }
                     }
@@ -81,5 +81,4 @@ class WifiDevicesAdapter(
             holder.itemView.connectingLottie.bulge()
         }
     }
-
 }
